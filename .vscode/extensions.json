@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "moshfeu.compare-folders",
+        "yzhang.markdown-all-in-one",
+        "bierner.markdown-mermaid"
+    ]
+}
