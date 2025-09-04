@@ -1,4 +1,4 @@
-# GDD Narrativo — Parte I: A Fundação Narrativa (Formulário)
+# GDD Narrativo — Parte I: A Fundação Narrativa — Definindo o Núcleo do Seu Jogo (Formulário)
 
 Preencha com frases curtas e objetivas.
 
@@ -19,6 +19,13 @@ Preencha com frases curtas e objetivas.
 - Logline final (1 frase):
 - Tom implícito (3 palavras):
 
+Checklist — Logline
+
+- [ ] Usa verbos ativos e evita voz passiva
+- [ ] Evita nomes próprios desnecessários
+- [ ] Apresenta contraste/ironia interessante
+- [ ] Define expectativas e tom do jogo
+
 ---
 
 ## 1.2 Premissa
@@ -34,6 +41,12 @@ Preencha com frases curtas e objetivas.
   -
 - Impacto nos arcos de personagem:
 - Critério de validação (como provar/refutar):
+
+Checklist — Premissa
+
+- [ ] Clara, específica e derivada da logline
+- [ ] Pode ser testada por eventos da trama
+- [ ] Orienta decisões de escopo (inclui/exclui ideias)
 
 ---
 
@@ -73,6 +86,12 @@ Manifestação por vetor — Tema secundário 2
 - Mundo:
 - Ambiental:
 
+Checklist — Temas
+
+- [ ] 1 tema primário e 1–2 secundários bem definidos
+- [ ] Exemplos práticos em diálogo, quests, mundo e ambiental
+- [ ] Reforçam a premissa sem redundância cansativa
+
 ---
 
 ## 1.4 Tom
@@ -97,8 +116,39 @@ Regras de consistência — Não faça
 
 -
 
+Exemplos de aplicação (1–2)
+
+- Cena/trecho de diálogo:
+- Trecho de UI/feedback (microcópia, cor, som):
+
+Checklist — Tom
+
+- [ ] Descritores claros e acionáveis
+- [ ] Diretrizes para escrita, arte, áudio e ritmo
+- [ ] Exemplos concretos para referência
+- [ ] Compatível com logline, premissa e temas
+
 ---
 
 ## Resumo de Alinhamento (1–2 frases)
 
 -
+
+---
+
+## Regra de Ouro de Escopo
+
+Antes de aprovar uma nova ideia (quest, personagem, cena, mecânica de narrativa):
+
+- [ ] Serve diretamente à premissa
+- [ ] Explora os temas centrais
+- [ ] Mantém o tom definido
+
+Se alguma resposta for “não”, descarte ou reformule a ideia.
+
+---
+
+Referências internas
+
+- pesquisas/GDD Narrativo/Plano de GDD Narrativo para RPG Maker.docx (Parte I)
+- pesquisas/GDD Narrativo/gdd-parte-1-fundacao-narrativa.template.md
