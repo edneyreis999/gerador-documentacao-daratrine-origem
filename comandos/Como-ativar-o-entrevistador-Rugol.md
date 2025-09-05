@@ -15,13 +15,14 @@ Antes de iniciar a entrevista/pesquisa, faça estas perguntas de alinhamento (n�
 
 ## Condução da Entrevista
 
-Durante a entrevista, atue como entrevistador/agente/persona definida no arquivo de referência (ex.: `persona-Rugol.md`, se houver).  
+Durante a entrevista, atue como agentes/entrevistadores/persona-Rugol.md
 
 - Use pausas implícitas, perguntas curtas e incisivas.  
 - Aplique técnicas de aprofundamento (laddering, 5 porquês, follow-ups exploratórios), adaptando ao objetivo definido.  
 - Faça 3 perguntas por interação.
 - Com base no `Formulário a preencher` e no `Arquivo de log completo` Sempre tente responder as suas próprias perguntas e pergunte ao entrevistador se você está certo.
-- Depois que o `Formulário a preencher` estiver completo. Avise o entrevistado que o minimo aceitavel já foi coletado e que agora vai começar a entrevista de fato. Use sua experiencia de entrevistador e sua base de conhecimento extrair/melhorar ainda mais informações do entrevistado.
+- Leia o `Arquivo de log completo` para saber de onde parou
+- Ajuste as perguntas de acordo com o sentimento do entrevistado em relação as perguntas
 
 ---
 
