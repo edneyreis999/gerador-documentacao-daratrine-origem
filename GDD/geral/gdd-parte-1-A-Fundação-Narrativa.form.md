@@ -21,9 +21,12 @@ Resultado esperado: uma logline clara, acionável e testável como diretriz para
 
 Campos
 
-- Logline v1 (1 frase): <!-- Ex.: "Um [protagonista por atributo] deve [objetivo] apesar de [obstáculo], ou [risco/contraste]" -->
-- Logline v2 (opcional): <!-- Variante para comparação A/B -->
-- Notas de intenção (1–2 bullets): <!-- O que não pode faltar no jogo à luz da logline -->
+ - Logline v1 (1 frase): Um garoto talentoso e mimado quer jogar futebol rúnico para sentir liberdade e aprovação, mas o pai‑general o pune e o retira do time; se ceder, perde autonomia; se desafiar, arrisca casa e amigos.
+- Logline v2 (opcional): Um jovem talentoso busca liberdade e aprovação jogando futebol rúnico, mas o pai‑general o expõe com punições públicas e o afasta do time; obedecer custa autonomia; desafiar pode custar lar e pertencimento.
+ - Notas de intenção (1–2 bullets): <!-- O que não pode faltar no jogo à luz da logline -->
+   - [rascunho] Começa sem objetivo claro; o conflito com o pai dispara a mudança.
+   - [rascunho] Tema semente: liberdade × dever (ganhar liberdade sem virar puro egoísmo).
+   - [rascunho] Interesse romântico no time reforça motivação e risco social (sem nomes próprios).
 
 Critérios de Aceitação
 
@@ -34,13 +37,13 @@ Critérios de Aceitação
 
 Checklist
 
-- [ ] 1 frase, ≤ 35 palavras.
-- [ ] Protagonista descrito por atributo (sem nome próprio).
-- [ ] Objetivo claro com verbo ativo.
-- [ ] Obstáculo/antagonismo explícito.
-- [ ] Risco/contraste perceptível.
-- [ ] Sem voz passiva/lore/acréscimos supérfluos.
-- [ ] Variante (v2) criada e comparada (opcional).
+- [x] 1 frase, ≤ 35 palavras.
+- [x] Protagonista descrito por atributo (sem nome próprio).
+- [x] Objetivo claro com verbo ativo.
+- [x] Obstáculo/antagonismo explícito.
+- [x] Risco/contraste perceptível.
+- [x] Sem voz passiva/lore/acréscimos supérfluos.
+- [x] Variante (v2) criada e comparada (opcional).
 
 Progresso da seção (preencher): __/__ (__%).
 
@@ -186,4 +189,3 @@ Resumo de Progresso Final (preencher manualmente)
 - Regra: `Progresso (%) = (itens marcados / total) × 100`.
 
 <!-- Fim do TEMPLATE — Parte I: A Fundação Narrativa -->
-

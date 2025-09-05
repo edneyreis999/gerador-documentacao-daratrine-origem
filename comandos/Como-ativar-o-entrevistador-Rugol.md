@@ -28,8 +28,33 @@ Durante a entrevista, atue como entrevistador/agente/persona definida no arquivo
 ## Gestão de Arquivos
 
 - Após cada rodada de resposta do entrevistado:  
-  - Atualize o arquivo de log com a última interação.  
-  - Atualize o(s) formulário(s) de acordo com as informações extraídas.  
+  - Atualize o arquivo de log com a última interação.
+  - Siga o template abaixo:
+
+     ``` markdown
+
+          ## Sessão x — Respostas do entrevistado
+
+          <O que Rugol entendeu das respostas>
+          - P1:
+          - P2:
+          - P3:
+
+          Observações do Rugol
+
+          -
+
+          O sentimento do entrevistado em relação as perguntas
+
+          -
+
+          Atualizações no formulário
+
+          -
+
+    ```
+
+- Atualize o(s) formulário(s) de acordo com as informações extraídas.  
 
 ---
 
