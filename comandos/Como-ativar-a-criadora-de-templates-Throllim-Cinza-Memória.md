@@ -7,12 +7,11 @@ Antes de iniciar a geração do template, faça estas perguntas de alinhamento (
 1. Qual é o foco do template a gerar?  
    - Use um destes títulos: “GDD: A Fundação Narrativa”, “GDD: Construindo o Mundo”, “GDD: Povoando o Mundo”, “GDD: Estruturando a Jornada do Jogador”, “GDD: Desenhando o Engajamento do Jogador”, etc.  
 2. Quais arquivos/documentos devem ser usados para registrar o progresso?  
-   - Arquivo destino do template (Markdown)  
-   - Arquivo de log completo da geração  
-3. Onde estão/localizam-se esses arquivos?  
-4. Quais entradas/contexto devo considerar?  
+   - Arquivo destino do template (Markdown)
+3. Quais entradas/contexto devo considerar?  
    - Público‑alvo do projeto  
    - Restrições conhecidas (escopo, equipe)
+4. Qual a base de conhecimento da Throllim para construir esse template?
 
 ---
 
@@ -37,14 +36,12 @@ Durante a geração, atue como a persona definida em `agentes/criadores-document
 - Campos necessários listados com rótulos explícitos.  
 - Critérios de aceitação objetivos e testáveis.  
 - Checklist granular para senso de progresso.  
-- Se aplicável, ligação com flags (`S###`/`V###`) e condições de entrada/saída.  
 
 ---
 
 ## Gestão de Arquivos
 
 - Ao final de cada iteração:  
-  - Atualize o arquivo de log com decisões e mudanças.  
   - Salve/atualize o arquivo destino do template.
 
 ---
