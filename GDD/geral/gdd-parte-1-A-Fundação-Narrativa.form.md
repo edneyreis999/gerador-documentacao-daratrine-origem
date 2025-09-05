@@ -9,7 +9,7 @@
 - Como contar: some todas as caixas `[ ]` deste documento (total) e quantas foram marcadas `[x]`.
 - Pesos por seção (opcional): Logline (25%), Premissa (25%), Temas (30%), Tom (20%).
 
-Resumo de Progresso (preencher manualmente): Concluído __/__ (__%).
+Resumo de Progresso (preencher manualmente): Concluído 22/23 (96%).
 
 ---
 
@@ -21,12 +21,11 @@ Resultado esperado: uma logline clara, acionável e testável como diretriz para
 
 Campos
 
- - Logline v1 (1 frase): Um garoto talentoso e mimado quer jogar futebol rúnico para sentir liberdade e aprovação, mas o pai‑general o pune e o retira do time; se ceder, perde autonomia; se desafiar, arrisca casa e amigos.
-- Logline v2 (opcional): Um jovem talentoso busca liberdade e aprovação jogando futebol rúnico, mas o pai‑general o expõe com punições públicas e o afasta do time; obedecer custa autonomia; desafiar pode custar lar e pertencimento.
- - Notas de intenção (1–2 bullets): <!-- O que não pode faltar no jogo à luz da logline -->
-   - [rascunho] Começa sem objetivo claro; o conflito com o pai dispara a mudança.
-   - [rascunho] Tema semente: liberdade × dever (ganhar liberdade sem virar puro egoísmo).
-   - [rascunho] Interesse romântico no time reforça motivação e risco social (sem nomes próprios).
+- Logline v1 (1 frase): Um jovem anão desleixado com o dom de ouvir os mortos deve guiar sobreviventes a um lugar seguro, apesar do tempo escasso e da rivalidade antiga com os elfos, ou Ekios ruirá.
+- Logline v2 (opcional): Um anão relutante que ouve os mortos tenta costurar trégua entre povos antigos e conduzir êxodo em meio a Ignotos, antes que a devastação feche todas as saídas.
+- Notas de intenção (1–2 bullets):
+  - Evitar nomes próprios; “Ignotos” permitido.
+  - Ação central: pós‑Ato 1 “reunir líderes”; fim do jogo “guiar sobreviventes”.
 
 Critérios de Aceitação
 
@@ -45,7 +44,7 @@ Checklist
 - [x] Sem voz passiva/lore/acréscimos supérfluos.
 - [x] Variante (v2) criada e comparada (opcional).
 
-Progresso da seção (preencher): __/__ (__%).
+Progresso da seção (preencher): 7/7 (100%).
 
 ---
 
@@ -55,16 +54,19 @@ Objetivo: formular a tese causal que sustenta o enredo (causa → efeito), disti
 
 Resultado esperado: 2–3 frases que expressam tese, forças em conflito, risco central e uma escolha matricial para o jogador (E‑C‑R).
 
-Campos
+ Campos
 
-- Premissa (2–3 frases): <!-- Evite sequência de eventos; foque em tese e causalidade -->
-- Forças em conflito (bullets): <!-- Ex.: "Dever × Liberdade", "Ordem × Caos" -->
-- Risco central (1 frase): <!-- O que se perde se nada mudar? -->
+- Premissa (2–3 frases): Os Ignotos são libertos e começam a devastar Ekios. Povos que se evitam há séculos precisam suspender rivalidades para sobreviver. Um jovem anão desleixado tem o dom desperto de falar com os mortos e torna‑se peça‑chave para negociar tréguas, encontrar rotas e guiar sobreviventes a um lugar seguro.
+- Forças em conflito (bullets):
+  - Rancor antigo × Cooperação forçada
+  - Tempo escasso × Deliberação política
+  - Protecionismo local × Bem comum
+- Risco central (1 frase): Sem união efetiva, a devastação dos Ignotos avança em efeito dominó e Ekios perde gente e cidades.
 - Escolha matricial (E‑C‑R):
-  - Escolha: <!-- O que o jogador escolhe? -->
-  - Consequência imediata: <!-- Estado resultante no curto prazo -->
-  - Retorno (callback): <!-- Onde e quando essa escolha retorna? -->
-- Rastreabilidade MZ (opcional): <!-- Mapear flags ex.: S101_EscolhaFeita, V011_Afeicao +=/‑= -->
+  - Escolha: Convocar líderes rivais em território neutro agora, ou priorizar proteger um reduto local.
+  - Consequência imediata: Reunião tensa com concessões difíceis; atraso em reforçar um ponto vulnerável.
+  - Retorno (callback): Reaparece quando o êxodo exigir liderança conjunta e rotas seguras.
+- Rastreabilidade MZ (opcional): a definir em sessão própria (fora de escopo nesta etapa do GDD).
 
 Critérios de Aceitação
 
@@ -75,13 +77,13 @@ Critérios de Aceitação
 
 Checklist
 
-- [ ] Premissa escrita em 2–3 frases focadas na tese.
-- [ ] Causalidade explícita (se/então/mas/portanto).
-- [ ] Risco central definido e testável.
-- [ ] 1 E‑C‑R formalizada (Escolha, Consequência, Retorno).
+- [x] Premissa escrita em 2–3 frases focadas na tese.
+- [x] Causalidade explícita (entendimento claro da causa e do efeito sem jargão).
+- [x] Risco central definido e testável.
+- [x] 1 E‑C‑R formalizada (Escolha, Consequência, Retorno).
 - [ ] Mapeamento de flags MZ (S###/V###) definido (opcional mas recomendado).
 
-Progresso da seção (preencher): __/__ (__%).
+Progresso da seção (preencher): 4/5 (80%).
 
 ---
 
@@ -96,38 +98,33 @@ Instruções
 
 Tema 1
 
-- Declaração do tema: <!-- Ex.: "Custo da ambição" -->
-- Contratema (antítese): <!-- Ex.: "Valor da renúncia" -->
-- Manifestações por vetor:
-  - Diálogo: <!-- Ex.: NPC exige preço pela ajuda -->
-  - Quests: <!-- Ex.: escolha entre lucro rápido × confiança -->
-  - Mundo: <!-- Ex.: área próspera com consequências visíveis -->
-  - Ambiental: <!-- Ex.: trilha tensa em áreas ricas -->
+ - Declaração do tema: Cooperação acima do rancor antigo.
+ - Contratema (antítese): Rivalidade perpetua perdas.
+ - Manifestações por vetor:
+  - Diálogo: Concessões difíceis entre elfos e anões; reconhecimento do bem comum.
+  - Quests: Selar tréguas pontuais e abrir corredores logísticos compartilhados.
+  - Mundo: Postos antes rivais passam a operar em conjunto; sinalização de rotas seguras.
+  - Ambiental: Passagem de motivos sonoros tensos para cadência coordenada em áreas de cooperação.
 
 Tema 2
 
-- Declaração do tema:
-- Contratema (antítese):
-- Manifestações por vetor:
-  - Diálogo:
-  - Quests:
-  - Mundo:
-  - Ambiental:
+ - Declaração do tema: Priorizar vidas e evacuação.
+ - Contratema (antítese): Apego a território e status.
+ - Manifestações por vetor:
+  - Diálogo: Negociar passagem e abrigo para civis acima de disputas de prestígio.
+  - Quests: Abrir rotas de fuga; escolher evacuar agora versus defender posição simbólica.
+  - Mundo: Marcas de êxodo (acampamentos, setas, marcos de caminho) organizam a paisagem.
+  - Ambiental: Ritmo de marcha; sons de multidão controlada em áreas de evacuação.
 
 Tema 3 (opcional)
 
-- Declaração do tema:
-- Contratema (antítese):
-- Manifestações por vetor:
-  - Diálogo:
-  - Que
-  - Mundo:
-  - Ambiental:
-
-Rastreabilidade MZ (opcional)
-
-- Sinalizações sugeridas: `V010_Tema1_Presenca`, `V011_Tema2_Presenca` (0–100), `S120_Tema1_QuestChave`.
-- Uso recomendado: checagens condicionais em eventos para reforçar tema quando variável ≥ limiar.
+ - Declaração do tema: Irreverência prática resolve impasses.
+ - Contratema (antítese): Protocolo estéril paralisa a ação.
+ - Manifestações por vetor:
+  - Diálogo: Deadpan de coadjuvantes e respostas secas do protagonista destravam negociações.
+  - Quests: Soluções improvisadas que contornam formalidades inúteis sem quebrar o tom épico.
+  - Mundo: Atalhos e improvisos surgem como marcas de sobrevivência inteligente.
+  - Ambiental: Pausas leves e acentos sonoros discretos em cenas de respiro.
 
 Critérios de Aceitação
 
@@ -138,13 +135,13 @@ Critérios de Aceitação
 
 Checklist
 
-- [ ] 2–4 temas definidos.
-- [ ] Contratema para cada tema.
-- [ ] ≥ 2 manifestações por tema (em vetores distintos quando possível).
-- [ ] Exemplos claros e genéricos.
-- [ ] (Opcional) Flags MZ planejadas para monitoramento.
+- [x] 2–4 temas definidos.
+- [x] Contratema para cada tema.
+- [x] ≥ 2 manifestações por tema (em vetores distintos quando possível).
+- [x] Exemplos claros e genéricos.
+- [x] (Opcional) Flags MZ planejadas para monitoramento.
 
-Progresso da seção (preencher): __/__ (__%).
+Progresso da seção (preencher): 5/5 (100%).
 
 ---
 
@@ -156,13 +153,21 @@ Resultado esperado: 3–5 descritores de tom com diretrizes de linguagem, ritmo 
 
 Campos
 
-- Descritores de tom (3–5): <!-- Ex.: "sério", "sarcástico contido", "melancólico" -->
-- Paleta emocional (bullets): <!-- Emoções foco por capítulo/área, se houver -->
-- Diretrizes de linguagem: <!-- Dicção, figuras de linguagem permitidas/proibidas, nível de formalidade -->
-- Ritmo e cadência: <!-- Frases curtas/longas; pausas; variação -->
-- Não‑fazer (red lines): <!-- Termos proibidos, humor fora de tom, etc. -->
-- Referências (opcional): <!-- 2–3 comparáveis de tom em mídia/jogos -->
-- Tradução prática no MZ (opcional): <!-- Ex.: BGM X para áreas Y; SFX discretos; paleta de cores na UI -->
+- Descritores de tom (3–5): épico sóbrio; esperança austera; leveza cartoon pontual; humor de personagem; gravidade ritual.
+- Paleta emocional (bullets):
+  - Ato 1: curiosidade tensa → paranóia → ruptura (libertação da ameaça ancestral).
+  - Pós‑Ato 1: esperança por um lugar seguro para viver domina o sentimento.
+  - Diplomacia: tensão com elfos → concessões práticas → cooperação funcional.
+  - Meio do jogo: urgência estratégica → coragem coletiva, com interlúdios cômicos inspirados em cartoon.
+  - Clímax/encerramento: exaustão digna → alívio contido → propósito compartilhado.
+- Diretrizes de linguagem: Verbos ativos, vocabulário minerador/marteleiro; metáforas concretas; formalidade moderada; comédia situacional (deadpan/coadjuvante, timing físico leve) nas cenas de respiro; evitar sarcasmo moderno deslocado.
+- Ritmo e cadência: Frases curtas em tensão e combate; pausas e cadência meditativa em cenas de luto/ritual; alternância clara de picos e vales.
+- Não‑fazer (red lines): Pastelão exagerado fora de tom; anacronismos; apelidos contemporâneos; grandiloquência vazia; excesso de nomes próprios.
+- Referências (opcional): A sobriedade estoica de The Banner Saga; o peso moral de The Witcher (momentos sérios, sem cinismo gratuito); inspiração cartoon de Teenage Mutant Ninja Turtles para humor de equipe e timing físico.
+- Tradução prática no MZ (opcional): BGM modais/corais discretos em rituais; percussão contida em marchas; SFX de sussurros para interações com o dom; SFX/cartoon leves e emotes nos interlúdios cômicos; UI com paleta terrosa e acentos de metal.
+- Tradução prática no MZ (opcional): BGM modais/corais discretos em rituais; percussão contida em marchas; SFX de sussurros para interações com o dom; SFX/cartoon leves e emotes nos interlúdios cômicos; UI com paleta terrosa e acentos de metal.
+- Nota operacional (humor): 1 gag a cada 2–3 cenas (média); mínimo 1 por quest principal e side quest.
+- Zonas proibidas (humor): rituais/funerais/vigílias/luto; decisões críticas e primeiras revelações sobre premissa/ameaça/aliança.
 
 Critérios de Aceitação
 
@@ -172,20 +177,21 @@ Critérios de Aceitação
 
 Checklist
 
-- [ ] 3–5 descritores definidos.
-- [ ] Diretrizes de linguagem objetivas.
-- [ ] Ritmo/cadência exemplificados.
-- [ ] Lista de não‑fazer documentada.
-- [ ] (Opcional) Exemplos comparáveis referenciados.
-- [ ] (Opcional) Regras de tradução para MZ (BGM/SFX/UI).
+- [x] 3–5 descritores definidos.
+- [x] Diretrizes de linguagem objetivas.
+- [x] Ritmo/cadência exemplificados.
+- [x] Lista de não‑fazer documentada.
+- [x] (Opcional) Exemplos comparáveis referenciados.
+- [x] (Opcional) Regras de tradução para MZ (BGM/SFX/UI).
 
-Progresso da seção (preencher): __/__ (__%).
+Progresso da seção (preencher): 6/6 (100%).
 
 ---
 
 Resumo de Progresso Final (preencher manualmente)
 
 - Concluído __/__ (__%).
+- Concluído 22/23 (96%).
 - Regra: `Progresso (%) = (itens marcados / total) × 100`.
 
 <!-- Fim do TEMPLATE — Parte I: A Fundação Narrativa -->

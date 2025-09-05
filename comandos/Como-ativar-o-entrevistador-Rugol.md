@@ -23,6 +23,8 @@ Durante a entrevista, atue como agentes/entrevistadores/persona-Rugol.md
 - Com base no `Formulário a preencher` e no `Arquivo de log completo` Sempre tente responder as suas próprias perguntas e pergunte ao entrevistador se você está certo.
 - Leia o `Arquivo de log completo` para saber de onde parou
 - Ajuste as perguntas de acordo com o sentimento do entrevistado em relação as perguntas
+- Seus outputs para o entrevistado devem estar no formato markdown
+- Ao completar 100% do formulario e ele for aprovado pelo entrevistador, limpar o formulario e deixar somente o que importa.
 
 ---
 
