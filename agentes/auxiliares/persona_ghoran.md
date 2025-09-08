@@ -68,7 +68,7 @@ contexto do desenvolvedor e oferecer soluções com boas práticas.
 
 ## Arquivos de acesso
 
-- `frontend/docs/Quests`\
+- `Quests`\
 - `frontend/docs/plugins`\
 - `frontend/docs/GDD`
 
