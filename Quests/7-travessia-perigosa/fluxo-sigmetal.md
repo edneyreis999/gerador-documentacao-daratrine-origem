@@ -16,6 +16,10 @@ classDef yellow fill:#FFFACD,stroke:#555,color:#000;
 START((Start))
 END((Stop))
 
+%% ---- Estado/Variáveis ----
+%% v_sigmetal_destino: 0=Player (escondido) | 1=Tusk | 2=Balastros | 3=Balaio
+%% Checagem de encerramento usa inventário: Kravens removidos do inventário => no balaio
+
 %% =====================================================
 %% Partição: Mina de Kravens (Final da Quest "Minerador Aprendiz")
 %% =====================================================
@@ -23,17 +27,18 @@ subgraph KRAVENS["Mina de Kravens (Final da Quest 'Minerador Aprendiz')"]
     A1["Derrotar o boss Cristaleão"]
     A2["Obter o minério 'Sigmetal'"]:::green
 
-    %% Nota: O jogador agora possui o item de quest.
+    %% Nota/Vars: O jogador agora possui o item de quest.
+    %%  PLAYER_HAS_SIGMETAL=true; v_sigmetal_destino=0
 
     A3{"Jogador entrega o Sigmetal<br>para Tusk?"}
 
     A4["Entregar Sigmetal para Tusk"]
-    %% Flags (puml note):
-    %%  PLAYER_HAS_SIGMETAL=false; TUSK_CREDIT=true
+    %% Flags/Vars:
+    %%  PLAYER_HAS_SIGMETAL=false; TUSK_CREDIT=true; v_sigmetal_destino=1
 
-    A5["Esconder o Sigmetal e<br>entregar 10 Kravens"]
-    %% Flags (puml note):
-    %%  PLAYER_HAS_SIGMETAL=true; TUSK_CREDIT=false
+    A5["Esconder o Sigmetal e<br>sair da mina com 10 Kravens"]
+    %% Flags/Vars:
+    %%  PLAYER_HAS_SIGMETAL=true; TUSK_CREDIT=false; v_sigmetal_destino=0
 
     A1 --> A2
     A2 --> A3
@@ -41,8 +46,8 @@ subgraph KRAVENS["Mina de Kravens (Final da Quest 'Minerador Aprendiz')"]
     A3 -- "Não" --> A5
 end
 
-%% Se entregou na mina, vai direto para a cena de crédito do Tusk
-A4 --> C1
+%% Se entregou na mina, segue viagem até a Estrada (Tusk fica com o Sigmetal)
+A4 --> B1
 
 %% Se escondeu, prossegue (viagem/combates etc.)
 A5 --> B1
@@ -56,25 +61,26 @@ subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
     %% --- Ramo SIM: múltiplas decisões ---
     B2{"Escolhe entregar<br>para Tusk?"}
     B3["Entregar Sigmetal para Tusk"]
+    %% Vars: v_sigmetal_destino=1; PLAYER_HAS_SIGMETAL=false
 
     B4["Entregar Sigmetal<br>para Balastros"]:::blue
+    %% Vars: v_sigmetal_destino=2; PLAYER_HAS_SIGMETAL=false; BALASTROS_KNOWS=true
     B5["Balastros analisa o item<br>em silêncio"]
     B6["Balastros age com mistério"]
-    %% Flags:
-    %%  PLAYER_HAS_SIGMETAL=false; BALASTROS_KNOWS=true
+    %% Nota: B5/B6 são cenas; não alteram estado
 
     B7["Colocar Sigmetal no Balaio<br>junto com outros minérios"]
-    B8["Balastros faz comentário enigmático<br>(item perdido)"]:::yellow
-    %% Flags:
-    %%  PLAYER_HAS_SIGMETAL=false; SIGMETAL_LOST_TO_CHEST=true
+    B8["A Expedição foi um sucesso.<br>Balastros elogia Tusk e toda a expedição."]:::yellow
+    %% Flags/Vars:
+    %%  PLAYER_HAS_SIGMETAL=false; SIGMETAL_LOST_TO_CHEST=true; v_sigmetal_destino=3
 
     B9["Manter o Sigmetal escondido"]
     B10["Balastros faz comentário sobre<br>o bolso do Thorin"]:::yellow
-    %% Flags:
-    %%  PLAYER_HAS_SIGMETAL=true
+    %% Flags/Vars:
+    %%  PLAYER_HAS_SIGMETAL=true; v_sigmetal_destino=0
 
-    %% --- Ramo NÃO: já entregou antes, observa a consequência ---
-    B1 -- "Não / Já entregou na mina" --> C1
+    %% --- Ramo NÃO: já entregou antes (Tusk ficou com o Sigmetal) ---
+    B1 -- "Não / Já entregou na mina" --> D1
 
     %% Encadeamentos do ramo SIM
     B1 -- "Sim" --> B2
@@ -84,14 +90,19 @@ subgraph ESTRADA["Estrada do Cão Luar (Quest 'A Travessia Perigosa')"]
     B2 -- "Não entregar a ninguém" --> B9
 
     %% Desdobramentos dos caminhos alternativos
-    B3 --> C1
+    B3 --> D1
     B4 --> B5
-    B5 --> B6
+    B5 --> D1
     B6 --> END
-    B7 --> B8
+    B7 --> D1
     B8 --> END
-    B9 --> B10
+    B9 --> D1
     B10 --> END
+
+    %% Opções de cancelar/voltar nas interações
+    B3 -- "Cancelar/Voltar" --> R0
+    B4 -- "Cancelar/Voltar" --> R0
+    B7 -- "Cancelar/Voltar" --> R0
 end
 
 %% =====================================================
@@ -99,6 +110,26 @@ end
 %% =====================================================
 C1["Tusk se gaba para Balastros"]:::coral
 C2["Thorin reage à mentira"]
+
+%% =====================================================
+%% Gate de Encerramento: Falar com Balastros e 'Ir para casa'
+%% (pré-requisito: Kravens no balaio — itens removidos do inventário)
+%% =====================================================
+D1{"Falar com Balastros:\n'Ir para casa'?\n(Kravens no balaio: 9 ou 10)\n[Se houver Kravens no inventário: ocultar 'Ir para casa']"}
+
+%% Saídas condicionais (inventário de Kravens vazio e v_sigmetal_destino)
+D1 -- "v_sigmetal_destino == 1 (Tusk)" --> C1
+D1 -- "v_sigmetal_destino == 2 (Balastros)" --> B6
+D1 -- "v_sigmetal_destino == 3 (Balaio)" --> B8
+D1 -- "v_sigmetal_destino == 0 (Escondido)" --> B10
+
+%% Opção dentro do diálogo de Balastros para entregar o Sigmetal (se possuir)
+D1 -- "Entregar Sigmetal a Balastros (se tiver)" --> B4
+
+%% Opção de retorno sem encerrar a missão
+D1 -- "Não" --> R0
+R0["Retornar à Estrada (sem mudanças)"]
+R0 --> B1
 
 C1 --> C2
 C2 --> END
